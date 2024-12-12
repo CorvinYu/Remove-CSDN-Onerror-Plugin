@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Remove CSDN onerror Redirect",
+    "version": "1.0",
+    "description": "Automatically removes onerror redirect from CSDN pages and local HTML files.",
+    "permissions": ["scripting", "activeTab"],
+    "host_permissions": ["*://*.csdn.net/*", "file://*/*"],
+    "content_scripts": [
+      {
+        "matches": ["*://*.csdn.net/*", "file://*/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
