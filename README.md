@@ -65,14 +65,24 @@
 ## 如何使用
 1. 安装插件后，打开任意 CSDN 子网站。
 2. 插件会自动运行，并清除相关的 `onerror` 跳转逻辑。
-3. 打开开发者工具（F12），在控制台中可看到日志输出：
-   ```
-CSDN redirect removed or local file processed.
+
+## 原理
+右键用文本编辑器打开离线保存的网页，搜索关键词onerror，找到下面这段：
+
 ```
+<img src="" onerror='setTimeout(function(){if(!/(csdn.net|iteye.com|baiducontent.com|googleusercontent.com|360webcache.com|sogoucdn.com|bingj.com|baidu.com)$/.test(window.location.hostname)){window.location.href="\x68\x74\x74\x70\x73\x3a\x2f\x2f\x77\x77\x77\x2e\x63\x73\x64\x6e\x2e\x6e\x65\x74"}},3000);'>
+
+```
+
+不要心慈手软，直接删除后保存即可。
+
+来自 https://blog.csdn.net/wydbyxr/article/details/84643758
 
 ## 许可证
 本项目采用 [MIT 许可证](LICENSE) 开源，欢迎自由使用和修改。
 
 ## 贡献
 如果您对插件有改进建议或发现问题，欢迎通过 [GitHub Issues](#) 提交反馈！
+
+
 
