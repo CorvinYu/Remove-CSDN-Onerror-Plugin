@@ -16,7 +16,7 @@
 
 ### 1. 手动安装
 1. 下载并解压插件文件：
-   - [点击此处下载插件](https://github.com/CorvinYu/Remove-CSDN-Onerror-Plugin/releases/download/v1.0/Remove.Onerror.Plugin.zip)（。
+   - [点击此处下载插件](https://github.com/CorvinYu/Remove-CSDN-Onerror-Plugin/releases/download/v1.0/Remove.Onerror.Plugin.zip)。
 2. 打开 Chrome 浏览器，访问 `chrome://extensions/`。
 3. 开启右上角的“开发者模式”。
 4. 点击“加载已解压的扩展程序”，选择解压后的文件夹。
